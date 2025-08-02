@@ -5,13 +5,35 @@ body {
 
 nav {
   background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1em;
 }
 
-nav a {
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-center {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-title {
   color: white;
   text-decoration: none;
-  margin-right: 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
 }
 
